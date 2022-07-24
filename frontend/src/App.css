@@ -1,0 +1,15 @@
+.rounded-3xl{
+  border-radius: 30px
+}
+.top-100 {
+  top: -100px;
+}
+@media (max-width: 768px) {
+.text-4xl, .text-3xl, .text-5xl {
+    font-size: 32px;
+    line-height: 50px;
+}
+}
+.bottom-0 {
+  bottom: -50px;
+}

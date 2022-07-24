@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import '~antd/dist/antd.css';
+
+body {
+  margin: 0;
+  font-family: 'Corinthia', cursive;
+  font-family: 'Inter', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 1px;
+  border-radius: 10px
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  /* height of horizontal scrollbar ← You're missing this */
+  width: 10px;
+  /* width of vertical scrollbar */
+  border: 1px solid red;
+  border-radius: 10px
+}
+
+
+/* Toggle A */
+input:checked~.dot {
+  transform: translateX(100%);
+  background-color: #fff;
+}
+
+/* Toggle B */
+input:checked~.dot {
+  transform: translateX(100%);
+  background-color: #fff;
+}
+
+/* html {
+  user-select: none
+} */
+
+
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #7614AC;
+  text-shadow: 0 0 0.25px currentcolor;
+}

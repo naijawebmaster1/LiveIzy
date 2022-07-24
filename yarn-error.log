@@ -1,0 +1,54 @@
+Arguments: 
+  C:\Users\elitebook\AppData\Local\Volta\tools\image\node\16.15.0\node.exe C:\Users\elitebook\AppData\Local\Volta\tools\image\yarn\1.22.18\bin\yarn.js install
+
+PATH: 
+  C:\Users\elitebook\AppData\Local\Volta\tools\image\yarn\1.22.18\bin;C:\Users\elitebook\AppData\Local\Volta\tools\image\node\16.15.0;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Volta\;C:\Python39\Scripts\;C:\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\elitebook\AppData\Local\Volta\bin;C:\Users\elitebook\AppData\Local\Microsoft\WindowsApps;C:\Users\elitebook\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\elitebook\AppData\Local\atom\bin;C:\Users\elitebook\AppData\Local\GitHubDesktop\bin;C:\Users\elitebook\AppData\Roaming\Composer\vendor\bin;C:\xampp\mysql\bin;C:\Program Files\JetBrains\DataGrip 2021.1.1\bin;;C:\Program Files\JetBrains\PhpStorm 2021.1.4\bin;;C:\Users\elitebook\AppData\Roaming\npm;C:\Users\elitebook\flutter\bin;C:\Users\elitebook\AppData\Local\Android\Sdk\cmdline-tools\bin;C:\Users\elitebook\AppData\Local\Android\Sdk\tools\bin;C:\Users\elitebook\flutter\bin\cache\dart-sdk\bin;C:\Users\elitebook\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\MongoDB\Server\5.0\bin;C:\Users\elitebook\AppData\Local\Microsoft\WindowsApps;C:\Users\elitebook\AppData\Local\Android\Sdk\platform-tools;
+
+Yarn version: 
+  1.22.18
+
+Node version: 
+  16.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "name": "mern-tutorial",
+    "version": "1.0.0",
+    "description": "Goalsetter app for youtube tutorial",
+    "main": "server.js",
+    "scripts": {
+      "start": "node backend/server.js",
+      "server": "nodemon backend/server.js",
+      "client": "npm start --prefix frontend",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+    },
+    "author": "Brad Traversy",
+    "license": "MIT",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "colors": "^1.4.0",
+      "dotenv": "^15.0.0",
+      "express": "^4.17.2",
+      "express-async-handler": "^1.2.0",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^6.1.9"
+    },
+    "devDependencies": {
+      "concurrently": "^7.0.0",
+      "nodemon": "^2.0.15"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
