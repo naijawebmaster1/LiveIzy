@@ -25,7 +25,6 @@ function Login() {
             </p>
           </div>
           <LoginForm />
-          {/* <Button btnImage={"./assets/rocketIcon.svg"} onClick={() => setOpen(true)} text={"Login with Rocket"} btnType={"secondary"} /> */}
                     <div>
             <p className="mt-2 text-center text-sm text-gray-600">
               <a href="#" className="font-medium text-black">
